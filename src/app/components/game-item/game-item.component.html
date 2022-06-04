@@ -1,0 +1,14 @@
+<div class="card mt-4 card-shadow">
+    <img [src]="game.imgUrl" class="card-img-top" [alt]="game.nome" height="200">
+    <div class="card-body">
+      <h5 class="card-title">{{game.nome}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Plataforma: {{game.plataforma}}</li>
+      <li class="list-group-item">Preço: <strong>{{game.preco | currency: 'BRL'}}</strong></li>
+      <li class="list-group-item mx-auto">
+          <button class="btn btn-success btn-sm">Comprar</button>
+          <button class="btn btn-outline-success btn-sm">Detalhes</button>
+        </li>
+    </ul>
+  </div>
